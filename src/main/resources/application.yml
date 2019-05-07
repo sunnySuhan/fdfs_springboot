@@ -6,3 +6,24 @@ fdfs:
     height: 150
   tracker-list:  # trackerList 参数  可以写多个
   - 192.168.95.11:22122
+server:
+  port: 8989
+  servlet:
+    context-path: /fdfs
+    jsp:
+      init-parameters:
+        development: true
+spring:
+  http:
+    encoding:
+      charset: UTF-8
+      force: true
+  mvc:
+    view:
+      prefix: /
+      suffix: .jsp
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 100MB
+
