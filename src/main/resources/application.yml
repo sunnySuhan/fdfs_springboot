@@ -5,4 +5,4 @@ fdfs:
     width: 150
     height: 150
   tracker-list:  # trackerList 参数  可以写多个
-  - 192.168.95.10:22122
+  - 192.168.95.11:22122

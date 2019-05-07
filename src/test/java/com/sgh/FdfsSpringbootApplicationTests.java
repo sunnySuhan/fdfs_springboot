@@ -21,11 +21,11 @@ public class FdfsSpringbootApplicationTests {
     // 测试上传
     @Test
     public void testFileUpload() throws FileNotFoundException {
-        File file = new File("D:\\水.jpg");
+        File file = new File("D:\\2.jpg");
         FileInputStream inputStream = new FileInputStream(file);
         StorePath storePath = storageClient.uploadFile(inputStream,
                 file.length(), "jpg", null);
-        System.out.println(storePath.getGroup() + " | " +
+        System.err.println(storePath.getGroup() + " | " +
                 storePath.getPath());
     }
 
